@@ -22,7 +22,7 @@ export default function DefaultNavbar() {
       <Navbar.Brand href="/">
         <Image
           alt="Logo"
-          className="mr-3 h-6 sm:h-9"
+          className="mr-3 h-6 sm:h-9 dark:invert"          
           src="/next.svg"
           width={108} height={45}
         />

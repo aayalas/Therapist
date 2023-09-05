@@ -15,6 +15,7 @@ export default function FooterWithSocialMediaIcons() {
               alt="Logo"
               href="/"
               name=""
+              className="dark:invert"
               src="/next.svg"
             />
           </div>

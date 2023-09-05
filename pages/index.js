@@ -11,6 +11,9 @@ import { Flowbite } from 'flowbite-react';
 import Header from './components/header';
 import Footer from './components/footer';
 import { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css'
 
 // const inter = Inter({ subsets: ['latin'] })
 const rubik = Rubik({ subsets: ['latin'] })
@@ -217,6 +220,18 @@ export default function Home({ dir }) {
         </section>         
         {/* Footer */}
         <Footer/>
+        <section>
+            <footer className="footer footer-center w-full p-4 bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
+              <div className="text-center">
+                <p>
+                  {/* Copyright © 2023 -  */}
+                  Made with  <FontAwesomeIcon icon={faHeart} className="fas fa-heart" style={{ color: "red", fontSize: 16 }}/> by
+                  {/* <i style="color: red" className="fa-solid fa-heart"> </i> */}
+                    <a className="font-semibold" href="mailto:alex.ayalas@gmail.com"> Alejandro Ayala</a>
+                </p>
+              </div>
+            </footer>
+        </section>
         {/* <footer class="footer footer-center w-full p-4 bg-rgb(252, 249, 249) text-gray-800 dark:bg-gray-900 dark:text-white">
             <div class="mx-auto max-w-screen-xl">
                 <div class="md:flex md:justify-between">
